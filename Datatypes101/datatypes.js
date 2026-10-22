@@ -4,7 +4,7 @@ let username = 'Nikhil'; //string (no character concept - string can have charac
 let age = 35; //number
 let PI = 3.14; //number
 let isActive = true; //prefix 'is' is required everytime we declare a boolean variable - boolean
-let user = null; //considered as object 
+let user = null; //considered as object - if Js sees it null - it will treat as object (bug) - null is datatype
 let data = undefined;
 
 //to store very big number (integer) - bigint
