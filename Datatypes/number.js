@@ -35,7 +35,7 @@ console.log(Number.MAX_SAFE_INTEGER); //2^53 -1
 console.log(Number.MAX_SAFE_INTEGER+1);
 console.log(Number.MAX_SAFE_INTEGER+2);
 console.log(Number.MAX_SAFE_INTEGER+3);
-//If we try to access the number which is greater than 2^53 -1 -> JS will do sound off - Issue
+//If we try to access the number which is greater than 2^53 -1 -> JS will do round off - Issue
 //storing bank account number or a big number and keep incrementing it, we will face the issue
 
 //Solution - bigint 
@@ -49,12 +49,12 @@ console.log(0/0); //NaN - not a number - not defined
 console.log("5" -5); //0 
 console.log("5" -2); //even though "5" is string but string is containing a number so it substracted 
 console.log("abc" -5); //NaN - result is not number (applicable to Number type)
-console.log("5" +5); //here result is concatenation of 5 in the string "5" -> 55
+console.log("5" +5); //here result is concatenation of 5 with the string "5" -> 55
 
 console.log(typeof NaN); //number 
 
 //Compare NaN with NaN - false
-console.log(NaN === NaN); //remember NaN cannot be equal to NaN because it is coming from illegal mathematical operation
+console.log(NaN === NaN); //remember NaN cannot be equal to NaN because both are coming from different mathematical operations
 
 
 
