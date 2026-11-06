@@ -1,0 +1,40 @@
+let names = ["katrina", "alia", "deepika"];
+console.log(names.length);
+console.log(names);
+console.log(names["0"]);
+console.log(names["3"]); //"3" key is not there - it will give undefined
+
+//To add new elements in the array
+//push() : appends new element at the end of the array and returns new length
+names.push("Ranbir");
+console.log(names);
+console.log(names["3"]);
+names["4"] = "Jatin";
+console.log(names);
+
+names[7]="Raj"; //since "5" and "6" are empty and we are inserting data at "7"
+console.log(names);
+
+let data=[];
+console.log(data.length);
+data[1000]="Jatin";
+console.log(data);
+console.log(data[0]);
+
+//To remove the element from the array
+//pop() : remove the particular element (from the top(last index) and return the last element
+let names1 = ["Raj","Uday","Swati"];
+console.log(names1);
+let data1 = names1.pop();
+console.log(data1);
+console.log(names1);
+data1 = names1.pop();
+console.log(data1);
+console.log(names1);
+data1 = names1.pop();
+console.log(data1);
+console.log(names1);
+data1 = names1.pop();
+console.log(data1);
+console.log(names1);
+
