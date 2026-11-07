@@ -37,4 +37,32 @@ console.log(names1);
 data1 = names1.pop();
 console.log(data1);
 console.log(names1);
+//If there is no element in the array, and we are trying to pop elements - we will get undefined
+//With the help of push()/pop(), we are making array working like a Stack.
+
+//shift() - similar to pop() method shift() will remove element from the start and returns the first element
+//Also it shifts other elements to the left. It works like a queue.
+let data2 = [10,20,30];
+let fElement = data2.shift();
+console.log(data2);
+console.log(fElement);
+
+//unshift() - Adds one or more elemets to the start and returns the new length similar to push()
+let newLength = data2.unshift(100,200,300);
+console.log(newLength);
+console.log(data2);
+
+//includes() - checks whether the particular element is included in the array or not. Returns boolean
+let result = data2.includes(200);
+console.log(result); //true
+//Unlike IndexOf, includes treats NaN as equal to NaN
+
+//IndexOf() - returns the first index of the value, or -1 if not found
+let firstNames = [`Jatin`,`Raj`,`Uday`,`Jatin`];
+console.log(firstNames.indexOf(`Jatin`)); //Jatin is at the 0th index 
+console.log(firstNames.indexOf(`Katrina`)); //-1
+console.log(firstNames.indexOf(`Uday`));
+//Since `Jatin` is there in the array twice so can give the from(start) index from where index searching will start and we will get 3
+console.log(firstNames.indexOf(`Jatin`,1)); //0th index will be skipped
+
 
