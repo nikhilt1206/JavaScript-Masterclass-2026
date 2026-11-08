@@ -1,0 +1,37 @@
+//join() - joins all elements into a single string with a separator.
+let data = [10,20,30];
+let result = data.join('%');
+console.log(result);
+
+//reverse() - reverse the array and return the same array reference
+let data2 = data.reverse(); //[30,20,10] - same array gets modified, no new array created
+console.log(data2);
+console.log(data);
+
+//Suppose we don't want to reverse/modify the original array - spread operator
+let names = ['raj','uday','deepak'];
+//Copy of names - [...names]  
+let x = [...names].reverse(); //only copy of original array gets modified/reversed
+console.log(x);
+console.log(names);//original array remains intact
+
+//sort() - sorts the data in place. Sorting will happen on the basis of Lexicographically not numeric.
+//Sorted like a Dictionary. 
+let numberData = [1,2,10,21,100];
+numberData.sort();
+console.log(numberData);
+let numberData1 = [1,2,10,21,100,150];
+let numberData1Copy = [...numberData1].sort();
+console.log(numberData1);
+console.log(numberData1Copy);
+
+//sort in ascending order
+numberData1.sort(function(a,b){
+    return a-b;
+});
+console.log(numberData1);
+
+
+
+
+
