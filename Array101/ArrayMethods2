@@ -30,7 +30,11 @@ numberData1.sort(function(a,b){
     return a-b;
 });
 console.log(numberData1);
-
+//using arrow => operator
+let numberData2 = [1,2,10,21,100,150];
+numberData2.sort((a,b)=>a-b);
+//decending order - change (a-b) to (b-a)
+console.log(numberData2);
 
 
 
