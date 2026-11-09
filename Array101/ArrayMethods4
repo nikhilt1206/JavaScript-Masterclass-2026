@@ -1,0 +1,28 @@
+//filter() - Returns a new array containing only elements where the callback is truthy (condition is true)
+let data = [10,20,30,50];
+let result = data.filter(function(value){
+    return value>=30;
+});
+console.log(result);
+
+let names = [{'name':'jatin','id':101,'salary':1000},
+    {'name':'uday','id':201,'salary':2000},
+    {'name':'raj','id':302,'salary':500},
+    {'name':'rohit','id':111,'salary':400}
+]; //Array of objects
+let result1 = names.filter(function(user){
+    return user.id===101;
+});
+console.log(result1);
+
+//find() - returns the first match else undefined - will directly get the value
+let ans = names.find(function(user){
+    return user.id===105;
+});
+console.log(ans);
+
+//findIndex() - like find(), but returns the index instead of the value or -1
+let index = names.findIndex(function(user){
+    return user.id === 201;
+});
+console.log(index);
